@@ -5,6 +5,7 @@
     <body>
         <script>
             let fake_db = {"trblss":"password123","elmico377":"password377"}
+            let file_path = "http://trblss.github.io/trblss.github.io/library.json"
             function login(){
                 username = document.getElementById("username").value
                 password = document.getElementById("pass").value
@@ -28,7 +29,23 @@
             <button onclick="login()">Authenticate</button>
         </div>
         <div id="home_page" style="z-index:10;position:absolute;background-color:white;width:99%;height:99%">
-            <h2>Nice you logged in</h2>
+            <h2>Nice you logged in, welcome to your home page I guess</h2>
+            <table>
+                <tr>
+                    <td>
+                        <button>Home</button>
+                    </td>
+                    <td>
+                        <button>Profile</button>
+                    </td>
+                    <td>
+                        <button>Hacking Interface</button>
+                    </td>
+                    <td>
+                        <button>Training</button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
