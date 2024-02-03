@@ -1,5 +1,34 @@
 <html>
-<body>
-<h1>Sup dawg</h1>
-</body>
+    <head>
+        <title>Cybersite</title>
+    </head>
+    <body>
+        <script>
+            let fake_db = {"trblss":"password123","elmico377":"password377"}
+            function login(){
+                username = document.getElementById("username").value
+                password = document.getElementById("pass").value
+                if(fake_db[username] == password){
+                    document.getElementById("login_page").style.zIndex = 1;
+                    console.log("Authentication of " + username + " was successful!")
+                } 
+            }
+        </script>
+
+        <div id="login_page" style="z-index:99;position:absolute;background-color:white;width:99%;height:99%">
+            <h1>Please enter your credentials to login</h1>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" minlength="8" required />
+            </div>
+            <button onclick="login()">Authenticate</button>
+        </div>
+        <div id="home_page" style="z-index:10;position:absolute;background-color:white;width:99%;height:99%">
+            <h2>Nice you logged in</h2>
+        </div>
+    </body>
 </html>
