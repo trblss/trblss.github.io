@@ -898,6 +898,49 @@ input[type=submit].cyberpunk:focus{
   animation-timing-function: linear; 
 }
 
+button.cyberpunk,
+input[type=reset].cyberpunk, 
+a.cyberpunk {
+  --text: "R-25";
+  --background-color: var(--red-color);
+  display: block;
+  border: none;
+  border-radius: 0%;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 35px 75px;
+  margin: 10px 20px 10px 0px;
+  position: relative;
+  color: #fff;
+  border-right: 3px solid var(--border-color);
+  clip-path: polygon(
+    -15px 0%,
+    calc(100% + 15px) 0%,
+    calc(100% + 15px) 100%,
+    20px 100%,
+    -15px calc(100% - 35px)
+  );
+  cursor: pointer;
+  background-color: var(--background-color);
+  outline: none;
+  display: inline-block;
+}
+
+button.cyberpunk:hover,
+a.cyberpunk:hover,
+input[type=reset].cyberpunk:hover,
+button.cyberpunk:focus,
+a.cyberpunk:focus,
+input[type=reset].cyberpunk:focus{
+  animation-name: buttonhover;
+  animation-duration: var(--glitched-duration);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
 button.cyberpunk.green,
 input[type=submit].cyberpunk.green,
 a.cyberpunk.green {
