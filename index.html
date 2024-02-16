@@ -6,9 +6,6 @@
     <body>
         <link href="./cyberpunk-2077.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=VT323&display=swap" rel="stylesheet">
-        <!-- <h1 class="cyberpunk"> 
-            <a href ="test.html"> link to test page </a>
-        </h1> -->
         <script>
             let fake_db = {"trblss":"password123","elmico377":"password377"}
             let file_path = "http://trblss.github.io/trblss.github.io/library.json"
@@ -16,7 +13,6 @@
                 username = document.getElementById("username").value
                 password = document.getElementById("pass").value
                 if(fake_db[username] == password){
-                    // document.getElementById("login_page").style.zIndex = 1;
                     console.log("Authentication of " + username + " was successful!")
                     window.location.href = "http://trblss.github.io/trblss.github.io/test.html"
                 } 
@@ -24,7 +20,6 @@
         </script>
 
         <section id="login_page" class="cyberpunk black both" style="margin-top:2%" >
-        <!-- style="z-index:99;position:absolute;background-color:white;width:99%;height:99%;padding-top:5%;margin-top:1%"> -->
             <h1 class="cyberpunk" style="padding-left:10%">Please enter your credentials to login</h1>
             <div class="homepage">
                 <label for="username">Username:</label>
@@ -36,24 +31,5 @@
             </div>
             <input type="submit" class="cyberpunk" value="Authenticate" onclick="login()" style="margin-left:10%">
         </section>
-        <!-- <div id="home_page" style="z-index:10;position:absolute;background-color:white;width:99%;height:99%">
-            <h2>Nice you logged in, welcome to your home page I guess</h2>
-            <table>
-                <tr>
-                    <td>
-                        <button>Home</button>
-                    </td>
-                    <td>
-                        <button>Profile</button>
-                    </td>
-                    <td>
-                        <button>Hacking Interface</button>
-                    </td>
-                    <td>
-                        <button>Training</button>
-                    </td>
-                </tr>
-            </table>
-        </div> -->
     </body>
 </html>
