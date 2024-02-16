@@ -1301,6 +1301,11 @@ section.cyberpunk.black p {
   background-color: var(--black-color);
 }
 
+div.homepage{
+  padding-left:10%;
+  width:50%
+}
+
 section.cyberpunk.black p.cyberpunk.inverse,
 section.cyberpunk.black p.inverse {
   border: none;
@@ -1691,3 +1696,4 @@ aside.cyberpunk a:after {
 .cyberpunk.black ul.steps li.current:after {
   background-color: var(--yellow-color);
 }
+
