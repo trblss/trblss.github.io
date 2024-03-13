@@ -6,12 +6,12 @@
   --orange-color: #ff9800;
   --border-color: #8ae66e;
   --red-color: #ff003c;
-  --blue-color: #0c5f74;
+  --blue-color: #149bbd;
   --green-color: #298d29;
   --purple-color: purple;
   --neon-color: #39ff14;
   --black-color: #000;
-  --background-color:#04756c;
+  --background-color: #d1c5c0;
 }
 
 @font-face {
@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: var(--blue-color);
+  background-color: var(--background-color);
   padding: 0px;
   margin: 0px;
   font-size: 20px;
