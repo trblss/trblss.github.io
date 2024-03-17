@@ -4,14 +4,15 @@
   --yellow-color: #f9f002;
   --yellow-color-opacity: #f9f00242;
   --orange-color: #ff9800;
-  --border-color: #8ae66e;
+  --border-color: #00ff9f; /*used to be 8ae66e*/
   --red-color: #ff003c;
-  --blue-color: #149bbd;
-  --green-color: #298d29;
+  --cred-color: #ff2a6d;
+  --blue-color: #05d9e8;
+  --green-color: #020202; 
   --purple-color: purple;
   --neon-color: #39ff14;
   --black-color: #000;
-  --background-color: #d1c5c0;
+  --background-color: #d1f7ff;
 }
 
 @font-face {
@@ -53,10 +54,10 @@ select.cyberpunk,
 .cyberpunk textarea,
 .cyberpunk select {
   width: calc(100% - 30px);
-  border: 30px solid var(--black-color);
-  border-left: 5px solid var(--black-color);
-  border-right: 5px solid var(--black-color);
-  border-bottom: 15px solid var(--black-color);
+  border: 30px solid var(--cred-color);
+  border-left: 5px solid var(--cred-color);
+  border-right: 5px solid var(--cred-color);
+  border-bottom: 15px solid var(--cred-color);
   clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px)  calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px  calc(100% - 0px), 0% calc(100% - 10px));
   margin-bottom: 10px;
   padding: 12px;
@@ -665,7 +666,7 @@ h4.cyberpunk:before,
   left: 2px;
   width: 100%;
   height: 10px;
-  background-color: var(--black-color);
+  background-color: var(--background-color);
   clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
 }
 
@@ -960,6 +961,12 @@ a.cyberpunk.blue {
   --background-color: var(--blue-color);
 }
 
+button.cyberpunk.pink,
+input[type=submit].cyberpunk.pink,
+a.cyberpunk.pink {
+  --background-color: var(--cred-color);
+}
+
 button.cyberpunk:after,
 input[type=submit].cyberpunk:after,
 a.cyberpunk:after {
@@ -972,7 +979,7 @@ a.cyberpunk:after {
   font-size: 0.6rem;
   line-height: 0.6rem;
   color: var(--black-color);
-  background-color: var(--yellow-color);
+  background-color: var(--border-color);
   border-left: 2px solid var(--border-color);
 }
 
@@ -1141,14 +1148,14 @@ input[type=submit].cyberpunk:focus:before  {
 
 /* Section */
 section.cyberpunk {
-  background-color: var(--yellow-color);
-  color: var(--black-color);
+  background-color: var(--background-color);
+  color: var(--blue-color);
   padding: 60px 60px;
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
 }
-section.cyberpunk:after,
+section.cyberpunk:after, /* made it to Blue, didnt want to fish through and find all the references to fix it  */
 section.cyberpunk.black:after {
   content: " ";
   display: block;
@@ -1156,7 +1163,7 @@ section.cyberpunk.black:after {
   left: 0px;
   width: 100%;
   height: 30px;
-  background-color: var(--black-color);
+  background-color: var(--blue-color);
   position: absolute;
   clip-path: polygon(0% 0%, 22% 0%, calc(22% + 30px) 30px, 52% 30px, calc(52% + 15px) 15px, 70% 15px, calc(70% + 15px) 30px, 90% 30px, calc(90% + 30px) 0px, 100% 0px, 100% 30px, 0px 30px);
 }
@@ -1254,7 +1261,7 @@ section.cyberpunk.both.black:before {
     31px 0%*/
 
 section.cyberpunk:before {
-  background-color: var(--black-color);
+  background-color: var(--blue-color);
 }
 
 section.cyberpunk:nth-child(even):after,
