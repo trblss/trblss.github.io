@@ -1,7 +1,7 @@
 :root {
   --glitched-duration: 0.9s;
   --glitched-long-duration: 3s;
-  --yellow-color: #f9f002;
+  --yellow-color: #d1f7ff;
   --yellow-color-opacity: #f9f00242;
   --orange-color: #ff9800;
   --border-color: #00ff9f; /*used to be 8ae66e*/
@@ -11,7 +11,7 @@
   --green-color: #020202; 
   --purple-color: purple;
   --neon-color: #39ff14;
-  --black-color: #000;
+  --black-color: #05d9e8; /* used to be #000 , somehow its easier to just change colours here than down below, dont know why*/ 
   --background-color: #d1f7ff;
 }
 
